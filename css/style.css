@@ -69,6 +69,7 @@ ul li {
     align-items: center;
     box-shadow: gray 1px 2px 10px;
     cursor: pointer;
+    transition: ease 2s;
 }
 .primary-btn i {
     margin-left: 10px;
@@ -77,7 +78,7 @@ ul li {
     margin-left: 5px;
 }
 .primary-btn:hover {
-    box-shadow:inset-100px 0 0 0 black;
+    box-shadow:inset 100px 0 0 0 black,inset -100px 0 0 0 black;
     cursor: pointer;
 }
 .activ {
