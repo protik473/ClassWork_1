@@ -69,7 +69,7 @@ ul li {
     align-items: center;
     box-shadow: gray 1px 2px 10px;
     cursor: pointer;
-    transition: ease 2s;
+    transition: ease 1.8s;
 }
 .primary-btn i {
     margin-left: 10px;
@@ -78,8 +78,7 @@ ul li {
     margin-left: 5px;
 }
 .primary-btn:hover {
-    box-shadow:inset 100px 0 0 0 black,inset -100px 0 0 0 black;
-    cursor: pointer;
+    box-shadow: inset 100px 0 0 0 black, inset -100px 0 0 0 black;
 }
 .activ {
     color: var(--secondery-color);
@@ -121,7 +120,6 @@ ul li {
 }
 .icon i {
     padding: 5px;
-    font-size:25px;
 }
 .main_haderManu {
     position: relative;
@@ -164,6 +162,93 @@ ul li {
 .main_manu ul li a:hover {
     color: var(--secondery-color);
 }
+ul li a i {
+    font-size: 13px;
+    margin-left: 8px;
+}
+/*=======================new jonning my css code=====================================*/
+
+.dorpdown{
+    position: relative;
+}
+.dropdown:hover ul.sub_menu{
+    transform: scaleY(1);
+    opacity: 1;
+}
+.sub_menu{
+    width: 310px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    height: auto !important;
+    position: absolute;
+    top: 100px;
+    flex-direction: column;
+    transition: all 0.5s;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+    place-items: flex-start !important;
+    border-radius: 4px;
+}
+ul.sub_menu li {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+ul .sub_menu li a{
+    position: relative;
+    display: block;
+    color: #777777;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    font-family: var(--thm-font);
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    z-index: 1;
+}
+.sub_menu li:hover .sub_menu li a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #29d48d;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+    transform: scale(0);
+    transform-origin: center;
+    margin: 15px 0;
+    z-index: -1;
+}
+.sub_menu li:hover .sub_menu li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    bottom: 0px;
+    right: -15px;
+    background-color: #29d48d, .04;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+    z-index: -1;
+}
+
+/*=========================new joining in my css code=======================================*/
 .main_Content_top {
     width: 1200px;
     margin: auto;
@@ -980,7 +1065,6 @@ h1.course_title {
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
-    margin-top:-28;
 }
 .enterprise_planner {
     width: 1200px;
