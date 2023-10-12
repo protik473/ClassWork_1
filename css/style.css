@@ -1507,6 +1507,9 @@ li.active {
 .single_box.single_box_white {
     background: transparent;
 }
+.single_box .single_box_secondery {
+    background-color: var(--thm-bg);
+}
 /*====================*//*====================*//*====================*/
 
 
