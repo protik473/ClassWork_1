@@ -121,6 +121,13 @@ ul li {
 .icon i {
     padding: 5px;
 }
+/*===================================header _section====================================================*/
+.main_header{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: rgb(247, 249, 246);
+}
 .main_haderManu {
     position: relative;
     margin-left: auto;
