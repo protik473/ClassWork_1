@@ -70,14 +70,14 @@ ul li {
     cursor: pointer;
     transition: ease .8s;
 }
+.primary-btn:hover {
+    box-shadow: inset 100px 0 0 0 black, inset -100px 0 0 0 black;
+}
 .primary-btn i {
     margin-left: 10px;
 }
 .primary-btn span {
     margin-left: 5px;
-}
-.primary-btn:hover {
-    box-shadow: inset 100px 0 0 0 black, inset -100px 0 0 0 black;
 }
 .activ {
     color: var(--secondery-color);
